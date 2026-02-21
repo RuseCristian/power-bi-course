@@ -1,0 +1,78 @@
+Chapter 1.1
+	Checked out what power BI is, what it can do, how it got developed, check out the interface, tools and posibilities of power BI, alongside making a simple dashboard with a premade csv dataset about jobs
+	
+chapter 1.2 
+	Made a more complex dashboard and focused a lot on the options available in the visualization chart, labels titles, axis options still utilizing the same job dataset
+	 etc
+	
+
+Chapter 2 is dedicated to to trialing out each option in the visualization chart
+
+	Chapter 2.1 A very used one, stacked Bar Chart, made one for the highest paying jobs titles, showcasing the median yearly salary for each position. Decided to show median instead of average salary
+	as average tends to show skewed results due to either few high performing outliers or underperforimg ones, therefore the median, appears to be more valuable as it shows a better general picture of the realities for each position
+	Also first worked with advanced filters, to filter on the y axis job titles which were not related to data jobs, such as machine learning or software engineering, by specifying that the job title should contain the word "data".
+	
+	
+	
+	Chapter 2.2 Utilized a clustered column chart to display the average yearly salary per month for the top 4 countries in order of how many jobs there are in said countries, worldwide
+		stacked column chart, displaying the amount of positions which require a degree vs ones which do not for a particular job position
+	 stacked bar chart working off chapter 2.3, but instead displaying percentages of degree vs no degree requirements
+	
+	chapter 3 learned about line charts, trendlines, min, and max, and analytics tab in general and drills, Stacked charts, and stacked percentage Charts, line and stacked column charts
+	
+	Chapter 4 played with pie and donut charts, treemap and scattered charts, learned about having a cohesive list color scheme throught the whole dashboard so that it does not get distracting
+	learned about interactions and how to edit them
+	
+	Map charts - played with map charts and arcgis maps, blah blah, payed more attention to tooltips
+	
+	Tables And matrixes - learned to use tables and matrixes and also played with conditional formatting
+	
+	Cards- Multiple cards, simple cards, new cards, gauge cards,multi row cards and kpi cards
+	
+	Slicers- played with all types of slicers, adapted them for various situations multi input, single input, searches, dropdown, entity whatever the fuck is called, also added syncing between all of them, and clear button
+	
+	made a comprehensive job dashboard, learned about layers, and drill through, as i also made a drill through page
+	
+	
+	
+	
+	chapter 3.1 first delved into power bi power query, first of all tested the web urls to get data directly from the web, test with this website https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
+	to get the GDP of countries.
+	
+		played with folders and automatically updating when adding new files into the folders
+		tested with databases too, loaded with google big query for america health ratings
+		
+		
+	
+	played with data imports and transforms, learned about refferences , also cross refferences
+	
+	
+	advanced transformation, cleaned up the tables, made new table for job type ( part time, full time etc ) then cleared it and edited it too etc
+	cleaned up the job skills using a multitude of conditional columns, capitalization and replace values
+	
+	
+	
+	
+	
+	append and merge queries
+	
+	worked with multiple mothly reports and appended them 
+	
+	merged a star schema into a flat one
+	played with M language to change data, colums, queries etc
+	
+	
+	column from example with m language
+	M language is used at data import
+	whilst dax is used at query run time
+	DAX and M language 
+	difference between calculated columns and measures, measures are calculated at query run time, whilst claulcated columns are on data import
+	
+	explicit measures
+	
+	dax best practices for explicit measures, _Measures, apare sus, toate measurile pe care le facem puise in measures
+	
+	row context, query context, filter context
+	
+	learned about parameters
+	
