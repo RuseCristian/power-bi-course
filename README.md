@@ -2,6 +2,8 @@
 
 My hands-on Power BI learning repository featuring interactive dashboards, data transformations, and analytics using real-world job market data from 2024.
 
+**Course Followed**: [Power BI for Data Analytics - Full Course by Luke Barousse](https://www.youtube.com/watch?v=h_XYGj5pWeI)
+
 [![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![DAX](https://img.shields.io/badge/DAX-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://docs.microsoft.com/en-us/dax/)
 [![M Language](https://img.shields.io/badge/M%20Language-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://docs.microsoft.com/en-us/powerquery-m/)
@@ -45,13 +47,13 @@ _Salary analysis by job title using median values_
 
 - **Clustered Column Chart**: Displayed monthly salary trends across the top countries with the most job postings, allowing for easy comparison between geographic markets.
 
-![Visualizations - Multiple Charts](images/pbi%202.2.png)
-_Degree requirements breakdown - positions requiring degrees vs. those that don't_
-
 - **Line Charts**: Created trend analysis with min/max indicators and forecasting capabilities. Explored the Analytics pane to add reference lines, trend lines, and statistical insights directly on visualizations.
 
 ![Visualizations - Advanced](images/pbi%202.3.png)
 _Line charts with analytics pane features_
+
+![Visualizations - Multiple Charts](images/pbi%202.2.png)
+_Degree requirements breakdown - positions requiring degrees vs. those that don't_
 
 ![Charts Comparison](images/pbi%202.4.png)
 _Comparing different chart types for the same data_
@@ -75,15 +77,17 @@ _Geographic distribution of job opportunities_
 
 - **Cards & KPIs**: Created simple cards for key metrics, multi-row cards for grouped data, gauge cards for progress indicators, and KPI cards with trend indicators showing performance over time.
 
-![Card Visuals](images/pbi%202.8.png)
-_Various card types displaying key metrics_
-
-**Design Principles**:
+**Design Principles & Drill-Through**:
 
 Focused on maintaining a cohesive color scheme throughout the entire dashboard to avoid visual distraction. Learned that consistent tooltip formatting and professional layering of visuals creates a more polished and user-friendly experience. Implemented edit interactions to control how visuals cross-filter each other, preventing unwanted filtering behavior.
 
-![Dashboard Design](images/pbi%202.9.png)
-_Final comprehensive dashboard with cohesive design_
+A key feature implemented was drill-through functionality, which allows users to navigate from a summary dashboard to a detailed analysis page. By right-clicking on a data point in the main dashboard, users can drill through to see comprehensive information about that specific selection.
+
+![Main Dashboard](images/pbi%202.8.png)
+_Main dashboard with drill-through capabilities_
+
+![Drill-Through Detail Page](images/pbi%202.9.png)
+_Drill-through detail page for in-depth analysis_
 
 ---
 
