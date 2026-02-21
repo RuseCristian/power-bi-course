@@ -59,19 +59,6 @@ _Comparing different chart types_
 ![Stacked Charts](images/pbi%202.5.png)
 _Stacked column and percentage charts_
 
-**Interactive Features**:
-
-- Advanced filtering (Y-axis filters for "data" job titles only)
-- Multiple slicer types (multi-select, dropdown, search) synced across pages
-- Edit interactions to control visual cross-filtering
-
-![Slicers & Filters](images/pbi%202.6.png)
-_Interactive slicers configuration_
-
-- **Maps**: Standard map visualizations and ArcGIS Maps integration with custom tooltips
-- **Tables & Matrices**: Conditional formatting and drill-through functionality
-- **Cards & KPIs**: Simple cards, multi-row cards, gauge cards, KPI cards with trend indicators
-
 ![Map Visualizations](images/pbi%202.9.png)
 _Geographic distribution of job opportunities_
 
