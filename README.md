@@ -1,352 +1,142 @@
 # 📊 Power BI Data Analytics - Learning Journey
 
-A comprehensive repository documenting my journey learning Power BI for data analytics, featuring hands-on projects, visualizations, and data transformation techniques using real-world job market data.
+My hands-on Power BI learning repository featuring interactive dashboards, data transformations, and analytics using real-world job market data from 2024.
 
 [![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![DAX](https://img.shields.io/badge/DAX-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://docs.microsoft.com/en-us/dax/)
 [![M Language](https://img.shields.io/badge/M%20Language-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://docs.microsoft.com/en-us/powerquery-m/)
 
-## 📚 Table of Contents
-- [Overview](#-overview)
-- [Course Structure](#-course-structure)
-- [Key Learning Outcomes](#-key-learning-outcomes)
-- [Projects & Dashboards](#-projects--dashboards)
-- [Tools & Technologies](#-tools--technologies)
-- [Getting Started](#-getting-started)
-- [Repository Structure](#-repository-structure)
+## 🎯 What I Built
 
-## 🎯 Overview
+- **📊 Interactive Dashboards**: Multi-page analytical dashboards with drill-through pages
+- **🔄 Data Pipelines**: Automated ETL processes using Power Query
+- **📈 Advanced Analytics**: DAX measures and complex calculations
+- **🎨 Visual Storytelling**: Professional visualizations with cohesive design
 
-This repository contains all materials from my Power BI learning journey, including practice files, dashboards, and data transformation projects. The course focuses on practical, real-world applications using a dataset of data science job postings from 2024.
+![Power BI Dashboard Overview](images/pbi%201.1.png)
+*Dashboard Interface - Getting Started*
 
-### What I Built
-- **Interactive Dashboards**: Multi-page analytical dashboards with drill-through functionality
-- **Data Pipelines**: Automated ETL processes using Power Query
-- **Advanced Analytics**: DAX measures for complex calculations and insights
-- **Visual Storytelling**: Professional visualizations following best practices
-
-## 📖 Course Structure
+## 📖 Learning Path
 
 ### 1️⃣ Grand Tour - Power BI Fundamentals
-**Focus**: Introduction to Power BI interface, tools, and capabilities
+Introduction to Power BI Desktop, dashboard creation, and data import basics.
 
-**What I Learned**:
-- Power BI Desktop interface and navigation
-- Basic dashboard creation workflow
-- Data import from CSV files
-- Simple visualizations and formatting
-- Publishing and sharing dashboards
-
-**Files**: 
-- `chapter 1.pbix`
-- `PowerBI_Data_Analytics_Course/1_Grand_Tour/`
+![Power BI Interface](images/pbi%201.2.png)
+*Building my first dashboard*
 
 ---
 
-### 2️⃣ Visualizations - Mastering Visual Elements
-**Focus**: Deep dive into Power BI's visualization capabilities
+### 2️⃣ Visualizations - Chart Types & Design
 
-#### 📊 Chart Types Explored
+**Key Visualizations Built**:
+- **Stacked Bar Chart**: Highest-paying job titles using **median salary** (avoiding outlier skew from averages)
+- **Clustered Column Chart**: Monthly salary trends across top countries
+- **Line Charts**: Trend analysis with min/max indicators and forecasting
+- **Maps**: Geographic distribution with ArcGIS integration
+- **Tables & Matrices**: Conditional formatting and drill-through capabilities
+- **Cards & KPIs**: Key metrics with gauge and trend indicators
 
-**Bar & Column Charts**:
-- **Stacked Bar Chart**: Analyzed highest-paying job titles with median yearly salary
-  - *Key Insight*: Used **median instead of average** salary to avoid skewed results from outliers, providing a more realistic picture of compensation
-- **Clustered Column Chart**: Displayed average yearly salary per month across top 4 countries
-- **Stacked Column Chart**: Compared degree vs. no-degree requirements by job position
-- **Stacked Percentage Chart**: Visualized degree requirement distributions as percentages
+![Visualizations - Bar Charts](images/pbi%202.1.png)
+*Salary analysis by job title*
 
-**Advanced Filters**:
-- Implemented Y-axis filtering to exclude non-data roles (e.g., software engineering, machine learning)
-- Used "contains" operator to filter job titles containing "data"
+![Visualizations - Multiple Charts](images/pbi%202.2.png)
+*Degree requirements analysis*
 
-**Line Charts & Analytics**:
-- Trend analysis over time
-- Min/Max indicators
-- Analytics pane features (trendlines, forecasting)
-- Drill-down functionality across time hierarchies
+![Visualizations - Advanced](images/pbi%202.3.png)
+*Line charts with analytics*
 
-**Distribution Charts**:
-- **Pie & Donut Charts**: Simple proportion displays
-- **Treemap**: Hierarchical data visualization
-- **Scatter Charts**: Correlation analysis
+**Interactive Features**:
+- Advanced filtering (Y-axis filters for "data" job titles only)
+- Slicers: Multi-select, dropdown, search, synced across pages
+- Edit interactions for controlled cross-filtering
+- Drill-through pages for detailed analysis
 
-**Geospatial Visualizations**:
-- Standard Map charts
-- ArcGIS Maps integration
-- Custom tooltips for enhanced context
+![Slicers & Filters](images/pbi%202.6.png)
+*Interactive slicers configuration*
 
-**Data Tables & Matrices**:
-- Conditional formatting techniques
-- Drill-through on table rows
-- Matrix hierarchies and subtotals
+![Map Visualizations](images/pbi%202.7.png)
+*Geographic distribution of jobs*
 
-**KPI & Card Visuals**:
-- Simple cards for key metrics
-- Multi-row cards for grouped data
-- Gauge cards for progress indicators
-- KPI cards with trend indicators
+**Design Principles**: Cohesive color schemes, consistent tooltips, professional layering
 
-**Interactive Elements**:
-- **Slicers**: Multi-select, single-select, dropdown, search, and hierarchy slicers
-- **Sync Slicers**: Cross-page filtering
-- Clear all filters button
-- Edit Interactions: Controlled visual cross-filtering behavior
-
-#### 🎨 Design Principles
-- Maintained cohesive color scheme across entire dashboard
-- Implemented consistent tooltip formatting
-- Layered visuals for professional appearance
-- Created drill-through page for detailed analysis
-
-**Files**:
-- `chapter 2.pbix`
-- `PowerBI_Data_Analytics_Course/2_Visualizations/`
+![Dashboard Design](images/pbi%202.9.png)
+*Final comprehensive dashboard*
 
 ---
 
 ### 3️⃣ Power Query - Data Transformation & ETL
-**Focus**: Data import, transformation, and preparation using Power Query Editor
 
-#### 📥 Data Loading Methods
+**Data Sources Explored**:
+- Web scraping (Wikipedia GDP tables)
+- Folder imports with auto-refresh
+- Google BigQuery database connections
+- Monthly Excel files (combined 12 months into one dataset)
 
-**Web Data Sources**:
-- Tested direct web scraping from Wikipedia (GDP by country)
-- URL: `https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)`
-- HTML table parsing and cleaning
+**Transformations**:
+- Data cleaning and normalization
+- Conditional columns and text standardization
+- Append queries (union monthly reports)
+- Merge queries (star schema → flat table)
 
-**Folder Import**:
-- Automated data loading from folders
-- Dynamic updates when new files are added
-- Batch processing of monthly Excel files
-- Combined 12 monthly reports into single dataset
+**M Language**: Custom transformations at data import time
 
-**Database Connections**:
-- Google BigQuery integration
-- Example: America Health Ratings dataset
-- Direct database queries
+![Power Query Measures](images/pbi%203.1%20measures.png)
+*Power Query transformations*
 
-#### 🔧 Data Transformations
-
-**Basic Transformations**:
-- Column renaming and reordering
-- Data type conversions
-- Remove duplicates and nulls
-- Split and merge columns
-
-**Advanced Transformations** (`chapter 3.3`):
-- Created normalized **Job Type** table (Full-time, Part-time, Contract, etc.)
-- Cleaned job skills data using:
-  - Multiple conditional columns
-  - Text capitalization standardization
-  - Replace values operations
-- Reference queries vs. duplicate queries
-- Cross-referencing between tables
-
-#### 🔗 Query Operations
-
-**Append Queries**:
-- Combined monthly job posting reports (Jan-Dec 2024)
-- Union operations for identical schemas
-- Append vs. Append Queries as New
-
-**Merge Queries**:
-- Converted star schema to flat table structure
-- Join types: Inner, Left Outer, Right Outer, Full Outer
-- Expanded nested tables
-
-#### ⚙️ M Language
-**Concept**: M Language executes at **data import time** (vs. DAX at query runtime)
-
-**Applications**:
-- Custom column transformations
-- Advanced date/time calculations
-- Column from Example feature
-- Custom functions
-- Query parameters
-
-**Files**:
-- `chapter 3.1 different data loadings.pbix`
-- `chapter 3.2 pwqr query append.pbix`
-- `chapter 3.3 pwqr merging, measures, parameters.pbix`
-- `PowerBI_Data_Analytics_Course/3_Power_Query/`
+![Advanced Measures](images/pbi%203.2%20measures.png)
+*DAX measures setup*
 
 ---
 
 ### 4️⃣ DAX - Data Analysis Expressions
-**Focus**: Creating calculations and measures for advanced analytics
 
-#### 📐 Core Concepts
+**Core Concepts**:
+- **Calculated Columns** (data import) vs **Measures** (query runtime)
+- Row Context, Filter Context, Query Context
+- **Best Practice**: `_Measures` table for centralized measure management
 
-**Calculated Columns vs. Measures**:
-- **Calculated Columns**: Computed at data import, stored in data model, consumes memory
-- **Measures**: Calculated at query runtime, dynamic based on filter context, more efficient
+**Measures Created**:
+- Total Jobs Count, Median Salary, Degree Requirements %
+- Month-over-Month Growth, Top N filtering
 
-**Context Types**:
-- **Row Context**: Iterates row-by-row (used in calculated columns)
-- **Filter Context**: Applied by slicers, filters, and visual selections
-- **Query Context**: Entire query execution environment
+**Parameters**: What-if scenarios, dynamic thresholds
 
-#### 📏 Explicit Measures
-**Best Practice**: Created dedicated `_Measures` table for all explicit measures
-
-**Organizational Benefits**:
-- Centralized measure management
-- Easier to find and maintain
-- Cleaner field list in report view
-- No data storage (virtual table)
-
-**Sample Measures Created**:
-- Total Jobs Count
-- Average Salary (Mean vs. Median)
-- Jobs with Degree Requirements (%)
-- Month-over-Month Growth
-- Top N filtering
-
-#### 🎛️ Parameters
-- What-if parameters for scenario analysis
-- Dynamic thresholds for conditional formatting
-- User-controlled calculations
-
-**Files**:
-- `chapter 4.1.pbix`
-- `chapter 4.2 explicit meas.pbix`
-- `chapter 4.3 param.pbix`
-- `PowerBI_Data_Analytics_Course/4_DAX/`
+![DAX Parameters](images/pbi%203.3%20measures%20parameter.png)
+*Parameter configuration for dynamic analysis*
 
 ---
 
-## 🎯 Key Learning Outcomes
+## 🚀 Featured Projects
 
-### Data Analysis
-- ✅ Statistical analysis using median vs. average for accurate insights
-- ✅ Filtering and segmentation techniques
-- ✅ Time-series analysis and trend identification
-- ✅ Geospatial data visualization
+### Project 1: Multi-Page Data Jobs Dashboard
+Multi-page dashboard with drill-through functionality, interactive slicers, and 15+ synchronized visualizations.
 
-### Data Engineering
-- ✅ ETL pipeline creation with Power Query
-- ✅ Data normalization and denormalization
-- ✅ Automated data refresh workflows
-- ✅ Star schema and flat file design patterns
+**Highlights**: Market overview, salary analysis (median-based), geographic distribution, degree requirements
 
-### Business Intelligence
-- ✅ Dashboard design principles and best practices
-- ✅ Interactive storytelling with drill-through pages
-- ✅ KPI tracking and performance monitoring
-- ✅ User experience optimization with slicers and filters
-
-### Technical Skills
-- ✅ **M Language**: Data transformation at import time
-- ✅ **DAX**: Dynamic calculations and measures
-- ✅ **Power Query**: ETL and data modeling
-- ✅ **Visual Design**: Color theory, layering, and professional aesthetics
+### Project 2: Optimized Dashboard 2.0
+Single-page dashboard with star schema data model and advanced DAX measures for improved performance.
 
 ---
 
-## 🚀 Projects & Dashboards
+## 🛠️ Tech Stack
 
-### Project 1: Comprehensive Data Jobs Dashboard
-**Type**: Multi-page dashboard with drill-through functionality
-
-**Features**:
-- Market overview page with key metrics
-- Salary analysis by job title (median-based)
-- Geographic distribution of opportunities
-- Degree requirement breakdowns
-- Interactive slicers synced across all pages
-- Drill-through detail page for deep-dive analysis
-
-**Technical Highlights**:
-- 15+ visualizations with custom interactions
-- DAX measures for dynamic calculations
-- Advanced filtering logic
-- Professional color scheme and tooltips
-
-**File**: `PowerBI_Data_Analytics_Course/_Project_1/Data_Jobs_Dashboard.pbix`
+- **Power BI Desktop** - Dashboard development
+- **Power Query (M Language)** - ETL and data transformation
+- **DAX** - Measures and calculations
+- **Data Sources**: CSV, Excel, Web scraping, Google BigQuery
 
 ---
 
-### Project 2: Data Jobs Dashboard 2.0
-**Type**: Single-page focused dashboard with star schema
+## 🚀 Quick Start
 
-**Features**:
-- Streamlined insights on one page
-- Star schema data model (fact + dimension tables)
-- Advanced DAX expressions
-- Optimized performance for large datasets
-
-**Technical Highlights**:
-- Normalized data structure
-- Complex measure calculations
-- Efficient data model design
-- Enhanced visual hierarchy
-
-**File**: `PowerBI_Data_Analytics_Course/_Project_2/Data_Jobs_Dashboard_2.0.pbix`
-
----
-
-## 🛠️ Tools & Technologies
-
-### Software
-- **Power BI Desktop**: Primary development environment
-- **Power Query Editor**: Data transformation and ETL
-- **DAX Studio**: (Optional) Advanced DAX optimization
-
-### Languages & Frameworks
-- **M Language**: Power Query transformations
-- **DAX (Data Analysis Expressions)**: Measures and calculated columns
-
-### Data Sources
-- **CSV Files**: Flat file format (job_postings_flat.csv - *Note: 136 MB, not on GitHub*)
-- **Excel Files**: Monthly reports and aggregated data
-- **Web Scraping**: Wikipedia and other web sources
-- **Google BigQuery**: Cloud database connections
-
-### Data Schema
-- **Flat Schema**: Single denormalized table
-- **Star Schema**: Fact table + dimension tables (company, skills, job_skills_bridge)
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- **Power BI Desktop** (Free) - [Download here](https://powerbi.microsoft.com/desktop/)
-- **Windows 10/11** or **Windows Server 2016+**
-- **4 GB RAM minimum** (8 GB+ recommended for large datasets)
-
-### Installation
-
-1. **Clone the repository**:
+1. **Install Power BI Desktop**: [Download here](https://powerbi.microsoft.com/desktop/)
+2. **Clone the repo**:
    ```bash
    git clone https://github.com/RuseCristian/power-bi-course.git
-   cd power-bi-course
    ```
+3. **Open any `.pbix` file** and click "Enable Content"
 
-2. **Download Large Files** (Optional):
-   > ⚠️ **Note**: Some files exceed GitHub's 100 MB limit and are tracked with Git LFS
-   
-   If you need the full `job_postings_flat.csv` (136 MB):
-   - Install [Git LFS](https://git-lfs.github.com/)
-   - Run: `git lfs pull`
-
-3. **Open Power BI Files**:
-   - Navigate to desired chapter folder
-   - Double-click any `.pbix` file
-   - Click "Enable Content" when prompted
-
-### Quick Start Guide
-
-#### Option 1: Follow the Course
-Start with `chapter 1.pbix` and progress through chapters 1-4
-
-#### Option 2: Explore Projects
-Jump directly to the completed dashboards:
-- `PowerBI_Data_Analytics_Course/_Project_1/Data_Jobs_Dashboard.pbix`
-- `PowerBI_Data_Analytics_Course/_Project_2/Data_Jobs_Dashboard_2.0.pbix`
-
-#### Option 3: Practice Problems
-Check out `PowerBI_Data_Analytics_Course/Problems/` for hands-on exercises
+> ⚠️ **Note**: Some large files (>100MB) use Git LFS. Install [Git LFS](https://git-lfs.github.com/) and run `git lfs pull` if needed.
 
 ---
 
@@ -354,159 +144,43 @@ Check out `PowerBI_Data_Analytics_Course/Problems/` for hands-on exercises
 
 ```
 power-bi-course/
-│
-├── README.md                          # This file
-│
-├── chapter 1.pbix                     # Grand Tour - Basic dashboard
-├── chapter 2.pbix                     # Visualizations practice
-├── chapter 3.1 different data loadings.pbix  # Power Query basics
-├── chapter 3.2 pwqr query append.pbix        # Append operations
-├── chapter 3.3 pwqr merging, measures, parameters.pbix  # Advanced transforms
-├── chapter 4.1.pbix                   # DAX introduction
-├── chapter 4.2 explicit meas.pbix     # Explicit measures
-├── chapter 4.3 param.pbix             # Parameters
-│
-├── Data/                              # Personal practice data
-│   └── monthly jobs/                  # Monthly Excel files (Jan-Jul)
-│       ├── job_postings_01-2024.xlsx
-│       ├── job_postings_02-2024.xlsx
-│       └── ...
-│
-├── images/                            # Screenshot documentation
-│   ├── pbi 1.1.png
-│   ├── pbi 2.1.png
-│   └── ...
-│
-└── PowerBI_Data_Analytics_Course/     # Complete course materials
-    ├── README.md                      # Detailed course documentation
-    │
-    ├── _Project_1/                    # Multi-page dashboard
-    │   ├── Data_Jobs_Dashboard.pbix
-    │   └── README.md
-    │
-    ├── _Project_2/                    # Single-page optimized dashboard
-    │   ├── Data_Jobs_Dashboard_2.0.pbix
-    │   └── README.md
-    │
-    ├── 1_Grand_Tour/                  # Module 1: Introduction
-    │   ├── 1.1_PBI_App_Intro.pbix
-    │   └── 1.2_Dashboard_Build.pbix
-    │
-    ├── 2_Visualizations/              # Module 2: Charts & Visuals
-    │   └── 2_Visualizations.pbix
-    │
-    ├── 3_Power_Query/                 # Module 3: ETL & Transformations
-    │   ├── 3.1_Power_Query_Intro.pbix
-    │   ├── 3.1_Power_Query__Intro(BigQuery Demo).pbix
-    │   ├── 3.2_Power_Query_Editor.pbix
-    │   ├── 3.3_Project2_Import.pbix
-    │   ├── 3.4_Adv_Transformations.pbix
-    │   ├── 3.5_Append.pbix
-    │   ├── 3.5_Merge.pbix
-    │   └── 3.6_M_Language.pbix
-    │
-    ├── 4_DAX/                         # Module 4: DAX & Measures
-    │   ├── 4.1_DAX_Intro.pbix
-    │   ├── 4.2_Explicit_Measures.pbix
-    │   └── 4.3_Parameters.pbix
-    │
-    ├── Data/                          # Course datasets
-    │   ├── job_postings_flat.csv      # ⚠️ 136 MB - Use Git LFS
-    │   ├── job_postings_monthly.xlsx
-    │   ├── README.md
-    │   ├── monthly_files/             # Individual monthly files
-    │   │   ├── job_postings_01-2024.xlsx
-    │   │   ├── job_postings_02-2024.xlsx
-    │   │   └── ... (Jan-Dec 2024)
-    │   │
-    │   └── star_schema_files/         # Normalized database
-    │       ├── company_dim.csv
-    │       ├── job_postings_fact.csv  # ⚠️ 75 MB
-    │       ├── skills_dim.csv
-    │       └── skills_job_dim.csv
-    │
-    ├── Problems/                      # Practice exercises with solutions
-    │   ├── 1_Grand_Tour/
-    │   ├── 2_Visualizations/
-    │   ├── 3_Power_Query/
-    │   └── 4_DAX/
-    │
-    └── Resources/                     # Supporting materials
-        ├── images/
-        └── Project_Examples/
+├── README.md
+├── chapter 1.pbix - 4.3.pbix          # Course progression files
+├── Data/monthly jobs/                  # Practice datasets (Jan-Jul)
+├── images/                             # Screenshots & documentation
+└── PowerBI_Data_Analytics_Course/      # Complete course materials
+    ├── _Project_1/                     # Multi-page dashboard
+    ├── _Project_2/                     # Optimized dashboard
+    ├── 1_Grand_Tour/                   # Module 1: Basics
+    ├── 2_Visualizations/               # Module 2: Charts
+    ├── 3_Power_Query/                  # Module 3: ETL
+    ├── 4_DAX/                          # Module 4: Analytics
+    ├── Data/                           # Course datasets
+    │   ├── monthly_files/              # 12 monthly Excel files
+    │   └── star_schema_files/          # Normalized data
+    ├── Problems/                       # Practice exercises
+    └── Resources/                      # Supporting materials
 ```
 
 ---
 
-## 📊 Dataset Information
-
-### Data Source
-Real-world data science job postings from 2024, including:
-- Job titles and descriptions
-- Salary information (yearly compensation)
-- Location data (country, city)
-- Required skills and technologies
-- Education requirements (degree vs. no degree)
-- Employment type (Full-time, Part-time, Contract)
-- Company information
-- Posting dates (monthly breakdown)
-
-### Data Formats
-1. **Flat File** (`job_postings_flat.csv`): 136 MB single table - *Not on GitHub*
-2. **Monthly Excel** (`job_postings_monthly.xlsx`): Multi-sheet workbook
-3. **Individual Monthly Files** (`monthly_files/`): 12 separate Excel files
-4. **Star Schema** (`star_schema_files/`): Normalized relational structure
-
----
-
-## 🎓 Learning Resources
-
-### Official Documentation
-- [Power BI Documentation](https://docs.microsoft.com/en-us/power-bi/)
-- [DAX Function Reference](https://dax.guide/)
-- [Power Query M Reference](https://docs.microsoft.com/en-us/powerquery-m/)
-
-### Community
-- [Power BI Community](https://community.powerbi.com/)
-- [SQLBI (DAX experts)](https://www.sqlbi.com/)
-- [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
-
----
-
-## 🤝 Contributing
-
-Found an error or want to suggest an improvement?
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add some improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
----
-
-## 📝 Notes
+## � Key Takeaways
 
 ### Why Median Over Average?
-Throughout the salary analysis, I consistently used **median instead of average** because:
-- Median is resistant to outliers (extremely high or low salaries)
-- Provides a more realistic representation of typical compensation
-- Better reflects the actual market conditions for most professionals
-- Average can be skewed by a few executives or entry-level positions
+I consistently used **median instead of average** for salary analysis because:
+- **Resistant to outliers** (avoids skew from extreme salaries)
+- **More realistic** representation of typical compensation
+- **Better reflects** actual market conditions
 
-### File Size Limitations
-Some files exceed GitHub's 100 MB limit:
-- `job_postings_flat.csv` (136.35 MB) - Tracked with Git LFS
-- `job_postings_fact.csv` (75.33 MB) - Tracked with Git LFS
-- Several large `.pbix` files - Tracked with Git LFS
+### M Language vs DAX
+- **M Language**: Executes at data import time (ETL layer)
+- **DAX**: Executes at query runtime (Analytics layer)
 
-If you need these files, ensure Git LFS is installed and run `git lfs pull`.
-
----
-
-## 📜 License
-
-This project is for educational purposes. Data used in this course is for demonstration and learning only.
+### Best Practices Learned
+- Use `_Measures` table for centralized measure management
+- Prefer measures over calculated columns for better performance
+- Maintain cohesive color schemes across dashboards
+- Sync slicers for consistent user experience
 
 ---
 
@@ -518,10 +192,4 @@ This project is for educational purposes. Data used in this course is for demons
 
 ---
 
-## 🙏 Acknowledgments
-
-Special thanks to the Power BI community and all the educators who make learning data analytics accessible to everyone.
-
----
-
-⭐ **If you found this repository helpful, please consider giving it a star!** ⭐
+⭐ **If you found this helpful, please star the repo!** ⭐
