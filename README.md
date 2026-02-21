@@ -53,21 +53,26 @@ _Line charts with analytics pane features_
 ![Visualizations - Multiple Charts](images/pbi%202.2.png)
 _Degree requirements breakdown_
 
-![Charts Comparison](images/pbi%202.4.png)
+![Charts Comparison](images/pbi%202.1.png)
 _Comparing different chart types_
 
 ![Stacked Charts](images/pbi%202.5.png)
-_Stacked column and percentage charts_
+_Tables & Matrixes_
 
-![Map Visualizations](images/pbi%202.9.png)
+![Map Visualizations](images/pbi%202.4.png)
 _Geographic distribution of job opportunities_
 
 **Design & Drill-Through**:
 
 Maintained cohesive color schemes, consistent tooltips, and professional layering. Implemented drill-through functionality allowing users to navigate from summary dashboard to detailed analysis pages.
 
-![Main Dashboard](images/pbi%202.7.png)
+![Main Dashboard](images/pbi%202.8.png)
 _Main dashboard with drill-through capabilities_
+
+
+![Main Dashboard](images/pbi%202.9.png)
+_Drill Through_
+
 
 ---
 
